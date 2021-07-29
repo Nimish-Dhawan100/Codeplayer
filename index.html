@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CodePlayer</title>
+</head>
+<body>
+    <div id="container">
+        <div id="menuBar">
+          <div id="logo">
+            CodePlayer
+          </div>
+      
+          <div id="buttonDiv">
+            <button id="runButton">Run</button>
+          </div>
+      
+          <div id="toggleDiv">
+            <ul id="toggles">
+              <a href="#">
+                <li class="toggle selected">HTML</li>
+              </a>
+              <a href="#">
+                <li class="toggle">CSS</li>
+              </a>
+              <a href="#">
+                <li class="toggle">JS</li>
+              </a>
+              <a href="#">
+                <li class="toggle selected" style="border:none">Result</li>
+              </a>
+            </ul>
+          </div>
+      
+      
+        </div>
+      
+        <div class="clear"></div>
+      
+        <div class="codeContainer" id="htmlContainer">
+          <div class="codeLabel">HTML</div>
+          <textarea id="htmlCode"><div id="test"></div></textarea>
+        </div>
+      
+        <div class="codeContainer" id="cssContainer">
+          <div class="codeLabel">CSS</div>
+          <textarea id="cssCode"></textarea>
+        </div>
+      
+        <div class="codeContainer" id="jsContainer">
+          <div class="codeLabel">Javascript</div>
+          <textarea id="jsCode"></textarea>
+        </div>
+      
+        <div class="codeContainer" id="resultContainer">
+          <div class="codeLabel">Output</div>
+          <iframe id="resultFrame"></iframe>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="sheet.js"></script>
+</body>
+</html>
